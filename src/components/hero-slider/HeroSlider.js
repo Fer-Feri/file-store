@@ -28,9 +28,9 @@ const HeroSlider = () => {
             src={imageSlider[currentIndex]}
             width={500}
             height={500}
-            objectFit="cover"
-            layout="responsive"
+            style={{ objectFit: "cover" }}
             alt="hero-slider-1"
+            priority
           />
         </div>
         {/* dots */}
