@@ -26,7 +26,7 @@ const HeroSlider = () => {
         <div className="w-full">
           <Image
             src={imageSlider[currentIndex]}
-            width={500}
+            width={1400}
             height={500}
             style={{ objectFit: "cover" }}
             alt="hero-slider-1"
