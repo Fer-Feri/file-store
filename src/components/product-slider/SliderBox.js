@@ -14,7 +14,7 @@ import { MdShoppingCartCheckout } from "react-icons/md";
 
 const SliderBox = () => {
   return (
-    <Card className="flex max-w-[300px] shrink-0">
+    <Card className="flex max-w-[310px] shrink-0">
       <CardHeader>
         <Image
           src={"/product-slider/product-slider-img.jpg"}
