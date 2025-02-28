@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fa" dir="rtl">
       <body className={shabnam.variable}>
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto">
           <Header />
           {children}
         </div>

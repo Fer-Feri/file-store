@@ -24,7 +24,7 @@ const MenuMobile = ({ isOpenMenu, setIsOpenMenu }) => {
           className="w-[230px] bg-blue-500 text-white hover:bg-blue-600"
         >
           <Link href="/" className="max-md:text-[16px]">
-            فروشگاه
+            اپلیکیشن‌ها
           </Link>
         </Button>
         <Button
@@ -33,7 +33,7 @@ const MenuMobile = ({ isOpenMenu, setIsOpenMenu }) => {
           className="w-[230px] bg-blue-500 text-white hover:bg-blue-600"
         >
           <Link href="/" className="max-md:text-[16px]">
-            فروشگاه
+            کتاب‌ها
           </Link>
         </Button>
         <Button
@@ -42,7 +42,7 @@ const MenuMobile = ({ isOpenMenu, setIsOpenMenu }) => {
           className="w-[230px] bg-blue-500 text-white hover:bg-blue-600"
         >
           <Link href="/" className="max-md:text-[16px]">
-            فروشگاه
+            فایل‌های گرافیکی
           </Link>
         </Button>
         <Button

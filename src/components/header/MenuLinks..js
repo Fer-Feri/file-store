@@ -11,17 +11,17 @@ const MenuLinks = () => {
       </Button>
       <Button asChild variant="white">
         <Link href="/" className="max-md:text-[16px]">
-          فروشگاه
+          اپلیکیشن‌ها
         </Link>
       </Button>
       <Button asChild variant="white">
         <Link href="/" className="max-md:text-[16px]">
-          فروشگاه
+          کتاب‌ها
         </Link>
       </Button>
       <Button asChild variant="white">
         <Link href="/" className="max-md:text-[16px]">
-          فروشگاه
+          فایل‌های گرافیکی
         </Link>
       </Button>
       <Button asChild variant="white">

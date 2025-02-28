@@ -10,7 +10,7 @@ import MobileMenuWrapper from "./MobileMenuWrapper";
 
 const Header = () => {
   return (
-    <header className="container flex items-center gap-3 px-2 py-3">
+    <header className="container mx-auto flex max-w-7xl items-center gap-3 px-2 py-3">
       {/*//? SEARCH-&-BADGE-&-BASKET*/}
       <div className="flex grow flex-col gap-3 overflow-hidden">
         <div className="flex items-center justify-between gap-6 md:justify-start">

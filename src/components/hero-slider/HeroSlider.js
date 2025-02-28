@@ -21,7 +21,7 @@ const HeroSlider = () => {
   }, []);
 
   return (
-    <section className="my-9">
+    <section className="mx-auto my-9 max-w-7xl">
       <div className="relative container px-2">
         <div className="w-full">
           <Image
