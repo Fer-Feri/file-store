@@ -47,11 +47,11 @@ const GraphicBox = ({ graphic }) => {
   }, []);
 
   // اگر هنوز در کلاینت رندر نشده، یک نسخه ساده نمایش بده
-  if (!mounted) return <GraphicSliderSkeleton />
+  if (!mounted) return <GraphicSliderSkeleton />;
 
   return (
     <article className="h-full w-full max-w-[300px]">
-      <Card className="flex h-full flex-col">
+      <Card className="flex h-full flex-col pb-2">
         <CardHeader className="flex-none">
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-t-lg">
             <Image
@@ -91,7 +91,7 @@ const GraphicBox = ({ graphic }) => {
             </div>
           </div>
 
-          <div className="flex flex-wrap gap-1">
+          <div className="my-4 flex flex-wrap gap-1">
             {tags.map((tag) => (
               <Link key={tag} href={`/tags/${tag}`} className="no-underline">
                 <Badge className="cursor-pointer bg-gray-300 px-2 py-1 text-sm text-slate-900 transition-colors hover:bg-gray-400">
@@ -102,7 +102,7 @@ const GraphicBox = ({ graphic }) => {
           </div>
         </CardContent>
 
-        <CardFooter className="mt-auto flex items-center justify-between p-4">
+        <CardFooter className="mt-auto flex items-center justify-between">
           <div className="flex items-center gap-1">
             <button
               className="rounded-full p-1 transition-colors hover:bg-gray-100"
@@ -117,7 +117,7 @@ const GraphicBox = ({ graphic }) => {
               <CiSearch size={24} />
             </button>
           </div>
-          <div className="-ml-4 flex items-center">
+          <div className="-ml-6 flex items-center">
             <button
               className="rounded-full p-2 transition-colors hover:bg-gray-100"
               aria-label="افزودن به سبد خرید"

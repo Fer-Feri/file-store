@@ -39,11 +39,11 @@ const SliderBox = ({ product }) => {
   }, []);
 
   // اگر هنوز در کلاینت رندر نشده، یک نسخه ساده نمایش بده
-  if (!mounted) ProductSliderSkeleton;
+  if (!mounted) <ProductSliderSkeleton />;
 
   return (
     <article className="h-full w-full max-w-[320px]">
-      <Card className="flex h-full flex-col">
+      <Card className="flex h-full flex-col pb-0">
         <CardHeader className="flex-none">
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-t-lg">
             <Image
@@ -69,23 +69,23 @@ const SliderBox = ({ product }) => {
         </CardContent>
 
         <CardFooter className="mt-auto flex items-center justify-between p-4">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
             <button
-              className="rounded-full p-2 transition-colors hover:bg-gray-100"
+              className="rounded-full p-1 transition-colors hover:bg-gray-100"
               aria-label="ذخیره در علاقه‌مندی‌ها"
             >
               <CiBookmarkPlus size={24} />
             </button>
             <button
-              className="rounded-full p-2 transition-colors hover:bg-gray-100"
+              className="rounded-full p-1 transition-colors hover:bg-gray-100"
               aria-label="جستجوی محصول"
             >
               <CiSearch size={24} />
             </button>
           </div>
-          <div className="-ml-4 flex items-center">
+          <div className="-ml-4 flex items-center gap-1">
             <button
-              className="rounded-full p-2 transition-colors hover:bg-gray-100"
+              className="rounded-full p-1 transition-colors hover:bg-gray-100"
               aria-label="افزودن به سبد خرید"
             >
               <MdShoppingCartCheckout size={24} />
