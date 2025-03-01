@@ -1,7 +1,20 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { BannerSkeleton } from "../loading";
 
 const CategoryBox = () => {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return <BannerSkeleton />;
+  }
+
   return (
     <Link
       href="/"

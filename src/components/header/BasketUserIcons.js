@@ -1,9 +1,18 @@
 "use client";
+import { useState, useEffect } from "react";
 import { FaRegHeart } from "react-icons/fa";
 import { FaRegUser } from "react-icons/fa";
 import { MdOutlineAddShoppingCart } from "react-icons/md";
 
 const BasketUserIcons = () => {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
   return (
     <div className="flex items-center gap-2">
       {/* like icon*/}
@@ -23,12 +32,7 @@ const BasketUserIcons = () => {
         </div>
         <span className="text-white max-lg:hidden">سبد خرید</span>
         <MdOutlineAddShoppingCart
-          style={{
-            color: "#FF6900",
-            backgroundColor: "white",
-            borderRadius: "5px",
-            padding: "3px",
-          }}
+          className="rounded bg-white p-[3px] text-[#FF6900]"
           size={33}
         />
       </div>

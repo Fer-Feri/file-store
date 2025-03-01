@@ -1,12 +1,21 @@
 /** @format */
+"use client";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
 import { FiPhone } from "react-icons/fi";
 import { GoMail } from "react-icons/go";
 import SearchInput from "./SearchInput";
-import BasketUserIcons from "./BasketUserIcons";
-import MenuLinks from "./MenuLinks.";
-import MobileMenuWrapper from "./MobileMenuWrapper";
+import MenuLinks from "./MenuLinks";
+// import MobileMenuWrapper from "./MobileMenuWrapper";
+
+const BasketUserIcons = dynamic(() => import("./BasketUserIcons"), {
+  ssr: false,
+});
+
+const MobileMenuWrapper = dynamic(() => import("./MobileMenuWrapper"), {
+  ssr: false,
+});
 
 const Header = () => {
   return (
