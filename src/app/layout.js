@@ -2,6 +2,7 @@
 import { shabnam } from "@/fonts/fonts";
 import "./globals.css";
 import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
 export const metadata = {
   title: "File Store",
@@ -12,12 +13,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="fa" dir="rtl">
+    <html lang="fa-IR" dir="rtl">
       <body className={shabnam.variable}>
         <div className="mx-auto">
           <Header />
           {children}
         </div>
+        <Footer />
       </body>
     </html>
   );

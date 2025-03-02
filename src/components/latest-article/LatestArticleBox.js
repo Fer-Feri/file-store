@@ -12,7 +12,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { ProductSliderSkeleton } from "../loading";
 
-const LatestArticleBox = ({ article }) => {
+const LatestArticleBox = ({ article, className = "" }) => {
   const [mounted, setMounted] = useState(false);
 
   // داده‌های پیش‌فرض فقط برای زمانی که article وجود ندارد
@@ -51,7 +51,7 @@ const LatestArticleBox = ({ article }) => {
   return (
     <Link
       href={`/articles/${slug}`}
-      className="block h-full w-full max-w-[320px] no-underline"
+      className={`block h-full w-full max-w-[320px] no-underline ${className}`}
     >
       <article className="group h-full transition-transform duration-300 hover:scale-[1.02]">
         <Card className="flex h-full flex-col pb-0 shadow-sm transition-shadow duration-300 group-hover:shadow-md">

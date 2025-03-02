@@ -17,7 +17,7 @@ import { IoIosResize } from "react-icons/io";
 import { FaCopy } from "react-icons/fa";
 import { GraphicSliderSkeleton } from "../loading";
 
-const GraphicBox = ({ graphic }) => {
+const GraphicBox = ({ graphic, className }) => {
   const [mounted, setMounted] = useState(false);
 
   // داده‌های پیش‌فرض
@@ -50,7 +50,7 @@ const GraphicBox = ({ graphic }) => {
   if (!mounted) return <GraphicSliderSkeleton />;
 
   return (
-    <article className="h-full w-full max-w-[300px]">
+    <article className={`h-full w-full max-w-[300px] ${className || ""}`}>
       <Card className="flex h-full flex-col pb-2">
         <CardHeader className="flex-none">
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-t-lg">

@@ -14,7 +14,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { ProductSliderSkeleton } from "../loading";
 
-const SliderBox = ({ product }) => {
+const SliderBox = ({ product, className }) => {
   // اضافه کردن state برای کنترل رندر در کلاینت
   const [mounted, setMounted] = useState(false);
 
@@ -42,7 +42,7 @@ const SliderBox = ({ product }) => {
   if (!mounted) <ProductSliderSkeleton />;
 
   return (
-    <article className="h-full w-full max-w-[320px]">
+    <article className={`h-full w-full max-w-[320px] ${className || ""}`}>
       <Card className="flex h-full flex-col pb-0">
         <CardHeader className="flex-none">
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-t-lg">
