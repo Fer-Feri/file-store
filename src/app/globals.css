@@ -13,7 +13,7 @@ body {
 
 /* -----------------custom class-------------------- */
 .card {
-  @apply bg-white dark:bg-gray-800 shadow-lg p-6 rounded-xl;
+  @apply rounded-xl bg-white p-6 shadow-lg dark:bg-gray-800;
 }
 /*---break--- */
 :root {

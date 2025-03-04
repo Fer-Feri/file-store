@@ -3,6 +3,7 @@ import { shabnam } from "@/fonts/fonts";
 import "./globals.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+import { Toaster } from "react-hot-toast";
 
 export const metadata = {
   title: "File Store",
@@ -20,6 +21,22 @@ export default function RootLayout({ children }) {
           {children}
         </div>
         <Footer />
+        <Toaster
+          position="top-center"
+          reverseOrder={false}
+          toastOptions={{
+            duration: 4000,
+            className: shabnam.variable,
+            style: {
+              fontFamily: "var(--font-shabnam)",
+              background: "#333",
+              color: "#fff",
+              fontSize: "1.2rem",
+              padding: "16px",
+              maxWidth: "400px",
+            },
+          }}
+        />
       </body>
     </html>
   );
