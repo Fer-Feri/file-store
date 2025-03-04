@@ -44,13 +44,6 @@ app.use("/api", middleBannerRoute);
 const DATABASE_URL = process.env.MONGO_URL;
 const PORT = process.env.PORT;
 
-// mongoose
-//   .connect(DATABASE_URL)
-//   .then(() => console.log("MongoDB Connected"))
-//   .catch((err) => console.log(err));
-
-// module.exports = app;
-
 mongoose
   .connect(DATABASE_URL)
   .then((data) => {
