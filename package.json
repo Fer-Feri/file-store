@@ -4,12 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "node server/server.js",
-    "start:next": "next start",
-    "lint": "next lint",
+    "build": "next build && tsc",
+    "start": "next start",
     "server": "nodemon server/server.js",
-    "dev:all": "concurrently \"npm run dev\" \"npm run server\""
+    "lint": "next lint"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.2",

@@ -46,7 +46,14 @@ const PORT = process.env.PORT;
 
 mongoose
   .connect(DATABASE_URL)
-  .then((data) => {
-    app.listen(PORT);
-  })
+  .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.log(err));
+
+module.exports = app;
+
+// mongoose
+//   .connect(DATABASE_URL)
+//   .then((data) => {
+//     app.listen(PORT);
+//   })
+//   .catch((err) => console.log(err));
